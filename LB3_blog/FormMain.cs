@@ -43,7 +43,7 @@ namespace LB3_blog
 
         private void DataGridViewUsers_SelectionChanged(object sender, EventArgs e)
         {
-            if (this.db != null)
+            if (this.db != null && this.dataGridViewUsers.CurrentRow != null)
             {
                 var user = (Models.User)this.dataGridViewUsers.CurrentRow.DataBoundItem;
 
